@@ -1,0 +1,14 @@
+name's Log Book page #1: Planet 3P10HO-fond
+Planet size (in diameter of 1000 kms): 7
+Planet’s carrying capacity (in millions): 4167
+Habitable traits discovered: None
+Non-habitable traits discovered: None
+Friendly alien assessment: N/A
+
+name's Log Book page #2: Planet 478IQE-pile
+Planet size (in diameter of 1000 kms): 6
+Planet’s carrying capacity (in millions): 3749
+Habitable traits discovered: None
+Non-habitable traits discovered: None
+Friendly alien assessment: N/A
+
