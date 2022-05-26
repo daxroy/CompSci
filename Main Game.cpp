@@ -1,8 +1,3 @@
-//CSCI1300 Spring 2022
-//Author: Martin Dax Roy, Noah Mamo
-//Recitation: 103 - Rahul Kumar
-//Project 3 
-
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -19,49 +14,49 @@
 
 using namespace std;
 
-/////////
+
 int split(string userString, char theDelimeter, string storageArr[], int capacity){ // this function return the amount of substring between seperators 
     
-    int lengthStr =userString.length(); // length of the input string
+    int lengthStr =userString.length(); 
     int counter  = 0; 
     int j=0;
     string container ="";
-    if (userString == ""){ // check if input i empty string 
+    if (userString == ""){ 
         return 0;
     }
     else{
-        for (int i= 0; i<lengthStr; i++){ // transverse through string 
-            if (counter < capacity){ // check if our array has larger space than the number of substring we make 
-                if (userString[i] != theDelimeter ){ // check if delimeter doesnt exist we not continue 
-                    container = container + userString[i]; // we conocate the str 
-                    if (i == lengthStr-1 ){ // for the last sub string we use the index of the string  as our delimeter
-                        storageArr[j] = container; // we store the letters that were put in to the arr
-                        counter++; // we increment our counter caue we made a new substring 
+        for (int i= 0; i<lengthStr; i++){ 
+            if (counter < capacity){
+                if (userString[i] != theDelimeter ){ 
+                    container = container + userString[i];
+                    if (i == lengthStr-1 ){ 
+                        storageArr[j] = container; 
+                        counter++; 
                     }
                 }
                 else {
-                    storageArr[j] = container; // we pass the contained string to the array 
-                    container = ""; // we zero it out because it is stored in to the arr 
-                    j++; // helps to increment for our storage array
-                    counter++; // counts our amount of delimetre  / amount of substrings 
+                    storageArr[j] = container; 
+                    container = ""; 
+                    j++; 
+                    counter++; 
                 }
             }
             else {
-                return -1; // if the array has more elements that our capacity we return this 
+                return -1;
             }
             
         }
-        if (counter == 0){ // if there are no delimeter we return this 
-            storageArr[0] = container; // we store the whole string as the first element of the array 
-            return 1; // we also return 1 
+        if (counter == 0){
+            storageArr[0] = container; 
+            return 1;
         }
         else{
-            return counter; // if ther are delimeter we return the number of sub strings 
+            return counter; 
         }
     }
 
 }
-///////////////
+
 
 int main() {
     //Phase 1:

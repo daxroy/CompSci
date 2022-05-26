@@ -1,8 +1,3 @@
-//CSCI1300 Spring 2022
-//Author: Martin Dax Roy & Noah Mamo
-//Recitation: 103 - Rahul Kumar
-//Project 3
-
 #include <iostream>
 #include <iomanip>
 #include <string>
